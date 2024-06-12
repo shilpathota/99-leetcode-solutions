@@ -25,7 +25,7 @@ The list is guaranteed to be sorted in ascending order.<br/>
 <b>Inference</b><br/>
 1. Understanding the Problem<br/>
    a. Given the Linked list - Each linked list will have a Node where the element is present and the address of the next element.<br/>
-   <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist.png"/>
+   <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist.png"/><br/>
    b. The elements are already sorted in ascending order.<br/>
 2. Approach to Solution <br/>
    a. Iterate over the list from the head.<br/>
