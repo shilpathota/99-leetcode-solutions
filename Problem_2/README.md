@@ -1,6 +1,6 @@
 <h1>Climbing Stairs</h1>
-<b>Link to LeetCode - </b> https://leetcode.com/problems/climbing-stairs/description/
-<b>Difficulty Level - </b> Easy
+<b>Link to LeetCode - </b> https://leetcode.com/problems/climbing-stairs/description/<br/>
+<b>Difficulty Level - </b> Easy<br/>
 <p>
 You are climbing a staircase. It takes n steps to reach the top.
 
