@@ -41,4 +41,4 @@ The list is guaranteed to be sorted in ascending order.<br/>
 6. Repeat this process until all the elements are completed and we come out of while loop.<br/>
 7. As we have to return head of the final linked list we store it at the beginning in other variable so the variable can be returned.<br/>
 
-
+<img src="https://github.com/shilpathota/99-leetcode-solutions/blob/main/Problem_1/Problem1.drawio.png"/>
