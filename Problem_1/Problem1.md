@@ -51,8 +51,10 @@ As we have to iterate all the elements atleast once, if we have n elements, it s
 We are using one variable to store head and so the Space is O(1).<br/>
 Now that we got all the analysis done, let's jump into the coding!!
 <br/>
-For Java Solution - Problem_1.java<br/>
-For Python Solution - Problem_1.py<br/>
-For Javascript Solution - Problem_1.js<br/>
-For Typescript Solution - Problem_1.ts<br/>
-For C# Solution - Problem_1.cs<br/>
+
+
+For Java Solution - <a href="https://github.com/shilpathota/99-leetcode-solutions/blob/main/Problem_1/Problem_1.java">Problem_1.java</a><br/>
+For Python Solution - <a href="https://github.com/shilpathota/99-leetcode-solutions/blob/main/Problem_1/Problem_1.py">Problem_1.py</a><br/>
+For Javascript Solution - <a href="https://github.com/shilpathota/99-leetcode-solutions/blob/main/Problem_1/Problem_1.js">Problem_1.js</a><br/>
+For Typescript Solution - <a href="https://github.com/shilpathota/99-leetcode-solutions/blob/main/Problem_1/Problem_1.ts">Problem_1.ts</a><br/>
+For C# Solution - <a href="https://github.com/shilpathota/99-leetcode-solutions/blob/main/Problem_1/Problem_1.cs">Problem_1.cs</a><br/>
