@@ -42,3 +42,10 @@ The list is guaranteed to be sorted in ascending order.<br/>
 7. As we have to return head of the final linked list we store it at the beginning in other variable so the variable can be returned.<br/>
 
 <img src="https://github.com/shilpathota/99-leetcode-solutions/blob/main/Problem_1/Problem1.drawio.png"/>
+<br/>
+Now that we got the right solution, let's analyze the complexity<br/>
+<b>Time Complexity -</b><br/>
+As we have to iterate all the elements atleast once, if we have n elements, it should take O(n) as time complexity.<br/>
+<b>Space Complexity - </b><br/>
+We are using one variable to store head and so the Space is O(1).<br/>
+
