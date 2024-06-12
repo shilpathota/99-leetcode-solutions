@@ -49,4 +49,10 @@ Now that we got the right solution, let's analyze the complexity<br/>
 As we have to iterate all the elements atleast once, if we have n elements, it should take O(n) as time complexity.<br/>
 <b>Space Complexity - </b><br/>
 We are using one variable to store head and so the Space is O(1).<br/>
-
+Now that we got all the analysis done, let's jump into the coding!!
+<br/>
+For Java Solution - Problem_1.java<br/>
+For Python Solution - Problem_1.py<br/>
+For Javascript Solution - Problem_1.js<br/>
+For Typescript Solution - Problem_1.ts<br/>
+For C# Solution - Problem_1.cs<br/>
