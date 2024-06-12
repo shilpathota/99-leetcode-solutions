@@ -24,12 +24,21 @@ The number of nodes in the list is in the range [0, 300].<br/>
 The list is guaranteed to be sorted in ascending order.<br/>
 <b>Inference</b><br/>
 1. Understanding the Problem<br/>
-   Given the Linked list - Each linked list will have a Node where the element is present and the address of the next element<br/>
-   The elements are already sorted in ascending order<br/>
+   a. Given the Linked list - Each linked list will have a Node where the element is present and the address of the next element.<br/>
+   b. The elements are already sorted in ascending order.<br/>
 2. Approach to Solution <br/>
-   Iterate over the list from the head
-   remove the repeated elements
-   while returning the linked list it should point to the head.
-<br/><b>Solution</b><br/>
-To iterate over the list we can use while loop and the loop can continue till the head.next is not null. Also we have to verify if nead is not null to avoid iterating empty list
+   a. Iterate over the list from the head.<br/>
+   b. Remove the repeated elements.<br/>
+   c. While returning the linked list it should point to the head.<br/>
+
+
+<b>Solution</b><br/>
+1. To iterate over the list from head - For this, we can use while loop and the loop can continue till the head.next (Address of next element) is not null.<br/>
+2. Also we have to verify if head is not null to avoid iterating empty list.<br/>
+3. Validate if the next element is same as the current head.<br/>
+4. Replace the next element with next.next element so that one element in between which is same as current element is skipped.<br/>
+5. If the head is not same as next then no action is performed.<br/>
+6. Repeat this process until all the elements are completed and we come out of while loop.<br/>
+7. As we have to return head of the final linked list we store it at the beginning in other variable so the variable can be returned.<br/>
+
 
