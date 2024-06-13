@@ -58,3 +58,4 @@ The number of ways to reach step 1.<br/>
 If ways(n) represents the number of ways to reach step n, then:<br/>
 <pre>ways(n)=ways(n−1)+ways(n−2)</pre><br/>
 This is because you can get to step n either from step n-1 or step n-2.<br/>
+<img src = "https://github.com/shilpathota/99-leetcode-solutions/blob/main/Problem_2/Climbing%20Stairs.drawio.png"/>
