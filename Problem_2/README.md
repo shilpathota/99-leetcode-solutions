@@ -64,6 +64,7 @@ Fron the above inference, we can say that if we can get the optimal solution for
 This is the basic principle behind Dynamic Programming<br/>
 
 <h4>Solution</h4><br/>
+#Solution 1
 There are number of approaches that this problem can be solved. Let's see one by one and estimate its pros and cons
 1. It can be solved the way we solve fibonacci series but ways(n) = fib(n+1)<br/>
 so, we need to add  1 to the n to get the value.<br/>
@@ -78,3 +79,14 @@ As this is recursion which means the steps are repeated and we know within the r
 <p>Space Complexity: Consider the recursive stack space and it is O(n)</p>
 <p>Is this the optimal solution? No, Definitely not</p>
 <p>There are ways to improvize this solution</p>
+ <p>The algorithm looks as follows</p>
+<img src="https://github.com/shilpathota/99-leetcode-solutions/blob/main/Problem_2/Climbing%20Stairs2.drawio.png"/>
+#Solution 2
+<p>What if we store the solution in the recursion and check if the countStairs of n-1 already exists in the storage and if present we can fetch it stopping the recursion.<br/>This will definitely save the iterations. This process is called memoization. </p>
+In the above solution we are calculating the n-1 and n-2 as independent and no mattar if we have done that already.<br/>
+There is lot of repetition activities that can be reduced by storing already calculated values and not doing it again.<br/>
+For this, we can have an array with n elements which will be fed as -1 initially<br/>
+If we calculate climbstairs for n-k then it stores to the array if the value is -1<br/>
+Else it uses the value instead of recalculating it<br/>
+
+
