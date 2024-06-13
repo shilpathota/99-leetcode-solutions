@@ -59,3 +59,22 @@ If ways(n) represents the number of ways to reach step n, then:<br/>
 <pre>ways(n)=ways(n−1)+ways(n−2)</pre><br/>
 This is because you can get to step n either from step n-1 or step n-2.<br/>
 <img src = "https://github.com/shilpathota/99-leetcode-solutions/blob/main/Problem_2/Climbing%20Stairs.drawio.png"/>
+<br/>
+Fron the above inference, we can say that if we can get the optimal solution for the ways to get to n-1 step and n-2 step can resolve the ways to n step.<br/>
+This is the basic principle behind Dynamic Programming<br/>
+
+<h4>Solution</h4><br/>
+There are number of approaches that this problem can be solved. Let's see one by one and estimate its pros and cons
+1. It can be solved the way we solve fibonacci series but ways(n) = fib(n+1)<br/>
+so, we need to add  1 to the n to get the value.<br/>
+Clearly, this can be solved by recursion.<br/>
+As this is recursion which means the steps are repeated and we know within the recursion body, we have to add n-1 and n-2 <br/>
+ <ul>
+  <li>If n<=2 && n>0 then we can return n</li>
+   <li>Else we can return countStairs of n-1 + countStairs of n-2</li>
+ </ul>
+<p>This is the most simple solution and it definitely works but what about the complexity. Let's calculate it</p>
+<p>Time Complexity: The loop has to repeat 2 times as we have 2 ways to reach each step. This leads to complexity of 2<sup>n</sup></p>
+<p>Space Complexity: Consider the recursive stack space and it is O(n)</p>
+<p>Is this the optimal solution? No, Definitely not</p>
+<p>There are ways to improvize this solution</p>
