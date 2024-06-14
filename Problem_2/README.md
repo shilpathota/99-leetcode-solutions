@@ -88,5 +88,24 @@ There is lot of repetition activities that can be reduced by storing already cal
 For this, we can have an array with n elements which will be fed as -1 initially<br/>
 If we calculate climbstairs for n-k then it stores to the array if the value is -1<br/>
 Else it uses the value instead of recalculating it<br/>
+<h4>Step by Step Algorithm</h4><br/>
+Initialization of dp array: We create an array dp of size (n + 1) and initialize all its elements to 0.<br/>
+<pre>
+dp = [0] * (n + 1)</pre><br/>
+Base Cases: We set the values of dp[0] and dp[1] to 1. This is because there's only one way to climb 0 or 1 step.<br/>
+<pre>
+dp[0] = 1
+dp[1] = 1
+</pre><br/>
+Iterative Step: We iterate from 2 to n (inclusive) to fill in the dp array with the number of ways to climb i steps.<br/>
+
+<pre>for i in range(2, n + 1):
+    dp[i] = dp[i-1] + dp[i-2]</pre><br/>
+For each step i, the number of ways to reach that step is the sum of the number of ways to reach i-1 steps (if we climb 1 step from i-1) and the number of ways to reach i-2 steps (if we climb 2 steps from i-2).<br/>
+Return Result: We return the last element of the dp array, which represents the number of ways to climb n steps.<br/>
+<pre>
+return dp[-1]</pre><br/>
+This algorithm utilizes dynamic programming to efficiently compute the number of ways to climb the staircase. It avoids redundant calculations by storing previously computed results in the dp array.<br/>
+
 
 
