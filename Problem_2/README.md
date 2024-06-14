@@ -63,8 +63,7 @@ This is because you can get to step n either from step n-1 or step n-2.<br/>
 Fron the above inference, we can say that if we can get the optimal solution for the ways to get to n-1 step and n-2 step can resolve the ways to n step.<br/>
 This is the basic principle behind Dynamic Programming<br/>
 
-<h4>Solution</h4><br/>
-#Solution 1
+# Solution 1
 There are number of approaches that this problem can be solved. Let's see one by one and estimate its pros and cons
 1. It can be solved the way we solve fibonacci series but ways(n) = fib(n+1)<br/>
 so, we need to add  1 to the n to get the value.<br/>
@@ -81,7 +80,9 @@ As this is recursion which means the steps are repeated and we know within the r
 <p>There are ways to improvize this solution</p>
  <p>The algorithm looks as follows</p>
 <img src="https://github.com/shilpathota/99-leetcode-solutions/blob/main/Problem_2/Climbing%20Stairs2.drawio.png"/>
-#Solution 2
+
+
+# Solution 2
 <p>What if we store the solution in the recursion and check if the countStairs of n-1 already exists in the storage and if present we can fetch it stopping the recursion.<br/>This will definitely save the iterations. This process is called memoization. </p>
 In the above solution we are calculating the n-1 and n-2 as independent and no mattar if we have done that already.<br/>
 There is lot of repetition activities that can be reduced by storing already calculated values and not doing it again.<br/>
@@ -106,6 +107,39 @@ Return Result: We return the last element of the dp array, which represents the 
 <pre>
 return dp[-1]</pre><br/>
 This algorithm utilizes dynamic programming to efficiently compute the number of ways to climb the staircase. It avoids redundant calculations by storing previously computed results in the dp array.<br/>
+<br/>
+What about Complexity?<br/>
+<b>Time Complexity - </b> Here we are performing iteractions for all the n elements. So it would be O(n)<br/>
+<b>Space Complexity - </b> We are using array of n elements so the space it occupies is O(n)<br/>
+# Solution 3
+Can we get better solution than this? Yes, What if we can reduce the space complexity by just having 1 variable and removing the array.<br/>
+For this purpose, we can use temp variable.<br/>
+<b>Step by Step Solution:</b>
+Base Cases: If n is less than or equal to 3, we return n. This is because for n = 1 or n = 2, the number of ways to climb the stairs is equal to n. And for n = 3, there are 3 ways: 1+1+1, 1+2, and 2+1.<br/>
+<pre>
+if n <= 3:
+    return n</pre><br/>
+Initialization of Variables: We initialize prev1 to 3, prev2 to 2, and cur to 0. These variables will keep track of the number of ways to climb the stairs for the current step and the previous two steps.<br/>
+<pre>
+prev1 = 3
+prev2 = 2
+cur = 0</pre>
+Iterative Step: We iterate from 3 to n-1 (exclusive) to compute the number of ways to climb the stairs for each step.
+<pre>
+for _ in range(3, n):
+    cur = prev1 + prev2
+    prev2 = prev1
+    prev1 = cur</pre><br>
+For each step, cur stores the sum of the number of ways to climb the previous step (prev1) and the step before the previous one (prev2).<br>
+We update prev1 with the current value of cur and prev2 with the previous value of prev1.<br>
+Return Result: We return the value of cur, which represents the number of ways to climb n steps.<br>
+<pre>
+return cur</pre><br>
+This algorithm efficiently computes the number of ways to climb the staircase by keeping track of only the necessary information for the current and previous steps, reducing the memory footprint compared to storing all values in an array.<br>
+Let's analyze Complexity<br/>
+<b>Time Complexity - </b> Here we are performing iteractions for all the n elements. So it would be O(n)<br/>
+<b>Space Complexity - </b> We are using 1 varibale which is temperory so the space it occupies is O(1)<br/>
 
 
+Now that we got best solution - Lets implement it
 
