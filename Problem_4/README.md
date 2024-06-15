@@ -48,3 +48,17 @@ Iterate until the charcters do not match. If it does not match, we return the su
 Next we will go to second step - Selecting 2 strings<br/>
 For this we can use divide and conquer<br/>
 
+This function splits the array into two halves and recursively finds the longest common prefix for each half<br/>
+1. We start by checking if the input array strs is null or empty. If it is, we return an empty string as there's no common prefix to find.
+2. We define a recursive function longestCommonPrefix that takes the array of strings, a left index, and a right index.
+3. The purpose of this function is to recursively divide the array into smaller subarrays until we reach individual strings, and then merge the results to find the common prefix.
+4. If the left index equals the right index (left == right), it means we are looking at a single string. In this case, we return the string itself as the common prefix.
+5. If the left index does not equal the right index, we find the midpoint of the current subarray (mid = (left + right) / 2).
+6. We then recursively find the longest common prefix for the left half (lcpLeft) and the right half (lcpRight) of the subarray.
+7. After obtaining the common prefixes for the left and right halves, we merge them by finding the common prefix between lcpLeft and lcpRight using a helper function commonPrefix which is defined above.
+
+![image](https://github.com/shilpathota/99-leetcode-solutions/assets/36531617/04378486-4886-45b6-b7a3-45e33fe176fd)
+
+Let us build the pseudo code around this to have a better idea
+
+
