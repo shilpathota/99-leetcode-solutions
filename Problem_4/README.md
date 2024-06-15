@@ -62,3 +62,61 @@ This function splits the array into two halves and recursively finds the longest
 Let us build the pseudo code around this to have a better idea
 
 
+<pre>
+ function longestCommonPrefix(strs)
+    if strs is null or strs.length == 0 then
+        return ""
+    end if
+    
+    return divideAndConquer(strs, 0, strs.length - 1)
+end function
+
+function divideAndConquer(strs, left, right)
+    if left == right then
+        return strs[left]
+    else
+        mid = (left + right) / 2
+        lcpLeft = divideAndConquer(strs, left, mid)
+        lcpRight = divideAndConquer(strs, mid + 1, right)
+        return mergeLCP(lcpLeft, lcpRight)
+    end if
+end function
+
+function mergeLCP(lcpLeft, lcpRight)
+    minLength = min(lcpLeft.length, lcpRight.length)
+    for i = 0 to minLength - 1 do
+        if lcpLeft[i] != lcpRight[i] then
+            return lcpLeft.substring(0, i)
+        end if
+    end for
+    return lcpLeft.substring(0, minLength)
+end function
+
+-- Example usage:
+strs1 = ["flower", "flow", "flight"]
+strs2 = ["dog", "racecar", "car"]
+
+print(longestCommonPrefix(strs1))  -- Output: "fl"
+print(longestCommonPrefix(strs2))  -- Output: ""
+
+</pre>
+longestCommonPrefix Function:
+
+Checks if the input array strs is empty or null. If true, returns an empty string.
+Otherwise, calls the divideAndConquer function with the entire array.
+divideAndConquer Function:
+
+Checks if left equals right. If true, returns strs[left], which is the current string.
+Otherwise, calculates the midpoint (mid) of the current segment and recursively calls divideAndConquer on the left and right halves.
+Returns the result of merging the longest common prefixes (lcpLeft and lcpRight) of the left and right halves using the mergeLCP function.
+mergeLCP Function:
+
+Determines the minimum length between lcpLeft and lcpRight.
+Iterates through the characters of lcpLeft and lcpRight until a mismatch is found or the end of the shortest prefix is reached.
+Returns the longest common prefix found up to the first mismatch.
+Example Usage:
+
+Demonstrates how to use the longestCommonPrefix function with example arrays strs1 and strs2, printing their respective results.
+
+
+Let's dig into the code now
