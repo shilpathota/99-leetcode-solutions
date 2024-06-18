@@ -37,7 +37,7 @@ digits does not contain any leading 0's.
 # Solution
 
 #### Approach
-1. Create an integer pointing to the last element of the array digitsdigitsdigits
+1. Create an integer pointing to the last element of the array digits
 2. While the element at i == 9, set the element at i to '0' (9+1 = 10) and decrement the i pointer.
 3. If all the values are 9 upto the first element i.e. 'i' reached position 0, For Example, [9,9,9][9,9,9][9,9,9] then, create a new array of size digits.length + 1 filled with zeros [0,0,0,0][0,0,0,0][0,0,0,0] and set the element at 0th position to 1 ([1,0,0,0][1,0,0,0][1,0,0,0]) and return the new array
 4. else set the element at i to digits[i]+1digits[i] + 1digits[i]+1
