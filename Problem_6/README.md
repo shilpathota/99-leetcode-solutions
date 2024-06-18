@@ -42,7 +42,9 @@ digits does not contain any leading 0's.
 3. If all the values are 9 upto the first element i.e. 'i' reached position 0, For Example, [9,9,9][9,9,9][9,9,9] then, create a new array of size digits.length + 1 filled with zeros [0,0,0,0][0,0,0,0][0,0,0,0] and set the element at 0th position to 1 ([1,0,0,0][1,0,0,0][1,0,0,0]) and return the new array
 4. else set the element at i to digits[i]+1digits[i] + 1digits[i]+1
 5. return digits
-   
+
+#### Pictorial Representation
+<img src="https://github.com/shilpathota/99-leetcode-solutions/blob/main/Problem_6/Problem_6_1.drawio.png"/>
 ### Complexity
 Time complexity:O(n)
 
