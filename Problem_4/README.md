@@ -23,7 +23,7 @@ Explanation: There is no common prefix among the input strings.<br/>
 0 <= strs[i].length <= 200<br/>
 strs[i] consists of only lowercase English letters.<br/>
 
-## Solution
+## Solution 1
 ### Inference
 Lets first understand the problem. We have to find the common prefix among all the list of arrays.<br/>
 There are 2 possible steps here to solve this:<br/>
@@ -117,6 +117,16 @@ Returns the longest common prefix found up to the first mismatch.
 Example Usage:
 
 Demonstrates how to use the longestCommonPrefix function with example arrays strs1 and strs2, printing their respective results.
+
+## Solution 2
+
+We can use sorting technique to sort the array first and then compare the first and last words cna be a better approach with less number of iterations
+### Step- by - Step Solution
+1. Sort the array
+2. Store the first and last elements of the array
+3. compare each of the letters from the beginning to the min length of either one.
+4. Store the result in a variable and keep appending the characters to it.
+5. If the condition is not met or if the loop is completed then return the result.
 
 
 Let's dig into the code now
