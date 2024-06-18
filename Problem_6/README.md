@@ -44,7 +44,9 @@ digits does not contain any leading 0's.
 5. return digits
 
 #### Pictorial Representation
-<img src="https://github.com/shilpathota/99-leetcode-solutions/blob/main/Problem_6/Problem_6_1.drawio.png"/>
+<img src="https://github.com/shilpathota/99-leetcode-solutions/blob/main/Problem_6/Problem_6_1.drawio.png"/><br>
+
+
 ### Complexity
 Time complexity:O(n)
 
