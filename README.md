@@ -6,3 +6,13 @@ Each solution have
 3. Explanation of why this algorithm is best solution
 4. Time and space complexity of the solution.
 5. Compare with bruteforce algorithm.
+
+
+# Problems solved
+1. https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+2. https://leetcode.com/problems/climbing-stairs/description/
+3. https://leetcode.com/problems/valid-parentheses/description/
+4. https://leetcode.com/problems/longest-common-prefix/description/
+5. https://leetcode.com/problems/roman-to-integer/description/
+6. https://leetcode.com/problems/roman-to-integer/description/
+7. https://leetcode.com/problems/binary-tree-inorder-traversal/description/
