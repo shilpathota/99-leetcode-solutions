@@ -20,3 +20,4 @@ Each solution have
 9. https://leetcode.com/problems/defuse-the-bomb/description/
 10. https://leetcode.com/problems/longest-harmonious-subsequence/description/
 11. https://leetcode.com/problems/contains-duplicate-ii/
+12. https://leetcode.com/problems/maximum-average-subarray-i/description
