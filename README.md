@@ -19,3 +19,4 @@ Each solution have
 8. https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
 9. https://leetcode.com/problems/defuse-the-bomb/description/
 10. https://leetcode.com/problems/longest-harmonious-subsequence/description/
+11. https://leetcode.com/problems/contains-duplicate-ii/
