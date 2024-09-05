@@ -18,3 +18,4 @@ Each solution have
 7. https://leetcode.com/problems/binary-tree-inorder-traversal/description/
 8. https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
 9. https://leetcode.com/problems/defuse-the-bomb/description/
+10. https://leetcode.com/problems/longest-harmonious-subsequence/description/
