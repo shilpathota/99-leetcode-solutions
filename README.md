@@ -22,3 +22,5 @@ Each solution have
 11. https://leetcode.com/problems/contains-duplicate-ii/
 12. https://leetcode.com/problems/maximum-average-subarray-i/description
 13. https://leetcode.com/problems/search-insert-position/description/
+14. https://leetcode.com/problems/sqrtx/description/
+    
