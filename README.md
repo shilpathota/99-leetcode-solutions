@@ -21,3 +21,4 @@ Each solution have
 10. https://leetcode.com/problems/longest-harmonious-subsequence/description/
 11. https://leetcode.com/problems/contains-duplicate-ii/
 12. https://leetcode.com/problems/maximum-average-subarray-i/description
+13. https://leetcode.com/problems/search-insert-position/description/
