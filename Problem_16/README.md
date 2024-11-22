@@ -1,4 +1,6 @@
 # 408. Valid Word Abbreviation
+## Leet code Link - https://leetcode.com/problems/valid-word-abbreviation/description/
+## Complexity - Easy
 A string can be abbreviated by replacing any number of non-adjacent, non-empty substrings with their lengths. The lengths should not have leading zeros.
 
 For example, a string such as "substitution" could be abbreviated as (but not limited to):
