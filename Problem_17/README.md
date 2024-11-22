@@ -56,3 +56,15 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 -100 <= nums[i] <= 100
 
 nums is sorted in non-decreasing order.
+
+### Solution
+
+The algorithmic technique used is Two pointer Technique which gives better Time complexity compared to naive method. This is because we are considering 2 values for each iteration and so the complexity of using 2 loops is reduced and this works only for sorted arrays.
+
+#### Pseudo Code
+<pre>
+    1. Consider two pointers. 1 for loop and moves till the end of the array while the other moves only if there is unique element found by 1st pointer
+    2. Consider the first element is unique so start from second element and compare the element with previous element if the value is not same which means it is unique.
+    3. copy the value of unique value into the location of second pointer and increment the second pointer.
+    4. Once the loop is complete the second pointer points to the array index till which there are unique elements and so return it
+</pre>
