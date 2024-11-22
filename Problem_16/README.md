@@ -55,3 +55,14 @@ All the integers in abbr will fit in a 32-bit integer.
 
 ## Solution
 
+Pseudo Code
+<pre>
+ 1. If abbreviation length > word length -> return false
+ 2. Loop till abbreviation Length and check each character of abbreviation
+ 3. if it is a number, initialize num to zero and start the loop till it does not find the digit. 
+ 4. Add the num multiplied by 10 te push it to 10's place and add the character -'0' which gives numeric value. this gives the number
+ 5. add the number to word index and increment the abbreviation index
+ 6. If the character is not number then check if the word index  is greater than length or if the character does not match return false
+ 7. otherwise increment the index of both word and abbreaviation
+ 8. return wordIndex == word length
+</pre>
