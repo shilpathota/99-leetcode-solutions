@@ -32,4 +32,5 @@ Each solution have
 21. https://leetcode.com/problems/longest-palindromic-substring/description/
 22. https://leetcode.com/problems/design-circular-queue/description/
 23. https://leetcode.com/problems/range-sum-of-bst/description/
+24. https://leetcode.com/problems/merge-sorted-array/description/
     
