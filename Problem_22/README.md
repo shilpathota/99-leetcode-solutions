@@ -122,11 +122,11 @@ class MyCircularQueue {
 class MyCircularQueue {
     private static class Node{
         int data;
-        Node next,prev;
+        Node next;
 
         public Node(int data){
             this.data=data;
-            next=prev=null;
+            next=null;
         }
     }
 
@@ -148,7 +148,6 @@ class MyCircularQueue {
         Node newNode = new Node(value);
         if(queue==null) {queue= newNode;rearNode=newNode;}
         else{
-            newNode.prev=rearNode;
             rearNode.next=newNode;
             rearNode = newNode;
         }
@@ -161,7 +160,6 @@ class MyCircularQueue {
         if(isEmpty()) return false;
         if(queue.next !=null){
             queue=queue.next;
-            queue.prev=null;
         }
         else{
             queue = null;
