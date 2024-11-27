@@ -36,4 +36,5 @@ Each solution have
 25. https://leetcode.com/problems/two-sum/description/
 26. https://leetcode.com/problems/diameter-of-binary-tree/description/
 27. https://leetcode.com/problems/valid-palindrome/description/
+28. https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/
     
