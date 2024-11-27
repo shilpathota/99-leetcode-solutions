@@ -35,4 +35,5 @@ Each solution have
 24. https://leetcode.com/problems/merge-sorted-array/description/
 25. https://leetcode.com/problems/two-sum/description/
 26. https://leetcode.com/problems/diameter-of-binary-tree/description/
+27. https://leetcode.com/problems/valid-palindrome/description/
     
