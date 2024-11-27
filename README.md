@@ -34,4 +34,5 @@ Each solution have
 23. https://leetcode.com/problems/range-sum-of-bst/description/
 24. https://leetcode.com/problems/merge-sorted-array/description/
 25. https://leetcode.com/problems/two-sum/description/
+26. https://leetcode.com/problems/diameter-of-binary-tree/description/
     
