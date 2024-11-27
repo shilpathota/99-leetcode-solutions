@@ -33,4 +33,5 @@ Each solution have
 22. https://leetcode.com/problems/design-circular-queue/description/
 23. https://leetcode.com/problems/range-sum-of-bst/description/
 24. https://leetcode.com/problems/merge-sorted-array/description/
+25. https://leetcode.com/problems/two-sum/description/
     
