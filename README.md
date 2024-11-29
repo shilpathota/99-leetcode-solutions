@@ -37,4 +37,5 @@ Each solution have
 26. https://leetcode.com/problems/diameter-of-binary-tree/description/
 27. https://leetcode.com/problems/valid-palindrome/description/
 28. https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/
+29. https://leetcode.com/problems/contains-duplicate/description/
     
