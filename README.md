@@ -38,4 +38,5 @@ Each solution have
 27. https://leetcode.com/problems/valid-palindrome/description/
 28. https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/
 29. https://leetcode.com/problems/contains-duplicate/description/
+30. https://leetcode.com/problems/valid-anagram/description/
     
