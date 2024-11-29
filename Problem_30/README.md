@@ -53,6 +53,14 @@ This has the complexity of O(N)
 
 But there might be something missing with this solution. This will not work if there are unicode characters.
 
+#### Follow up
+
+What if the inputs contain unicode characters? How would you adapt your solution to such case?
+
+#### Answer
+
+Use a hash Map instead of a fixed size counter. Imagine allocating a large size array to fit the entire range of unicode characters, which could go up to more than 1 million. A hash table is a more generic solution and could adapt to any range of characters.
+
 ```java
 class Solution {
     public boolean isAnagram(String s, String t) {
