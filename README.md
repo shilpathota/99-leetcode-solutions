@@ -43,4 +43,6 @@ Each solution have
 32. https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/
 33. https://leetcode.com/problems/majority-element/description/
 34. https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+35. https://leetcode.com/problems/moving-average-from-data-stream/description/
+36. https://leetcode.com/problems/toeplitz-matrix/description/
     
