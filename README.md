@@ -41,4 +41,5 @@ Each solution have
 30. https://leetcode.com/problems/valid-anagram/description/
 31. https://leetcode.com/problems/group-anagrams/description/
 32. https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/
+33. https://leetcode.com/problems/majority-element/description/
     
