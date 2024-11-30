@@ -39,5 +39,6 @@ Each solution have
 28. https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/
 29. https://leetcode.com/problems/contains-duplicate/description/
 30. https://leetcode.com/problems/valid-anagram/description/
-31. https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/
+31. https://leetcode.com/problems/group-anagrams/description/
+32. https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/
     
