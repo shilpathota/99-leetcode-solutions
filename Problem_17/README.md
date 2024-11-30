@@ -68,3 +68,22 @@ The algorithmic technique used is Two pointer Technique which gives better Time 
     3. copy the value of unique value into the location of second pointer and increment the second pointer.
     4. Once the loop is complete the second pointer points to the array index till which there are unique elements and so return it
 </pre>
+
+```java
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        if(nums.length<=1) return nums.length;
+        int i=1;
+
+        for(int j=1;j<nums.length;j++){
+            if(nums[j-1]!=nums[j]){
+                        nums[i]=nums[j];
+                        i++;
+            }
+            
+        }
+        return i;
+
+    }
+}
+```
