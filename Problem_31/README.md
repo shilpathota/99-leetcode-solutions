@@ -90,15 +90,25 @@ class Solution {
 ```
 #### Character Frequency Count-Based Approach (Your Implementation):
 **Character Frequency Calculation:**
+
 For each string, constructing the frequency array takes O(k), where k is the length of the string.
+
 **HashMap Key Lookup and Update:**
+
 Converting the frequency array to a string key using Arrays.toString() also takes O(k).
+
 **Total Time Complexity**: O(n⋅k)
+
 #### Sorting-Based Approach:
+
 **Sorting the String:**
+
 Sorting a string of length O(k⋅logk).
+
 **HashMap Key Lookup and Update**:
+
 Adding the sorted string as the key to the map is O(1).
+
 **Total Time Complexity:** O(n⋅k⋅logk)
 
 
