@@ -67,3 +67,7 @@ Time Complesity for the above algorithm is O(n log k)
 
 Space Complexity is O(n + k)
 
+## My Mind Map
+
+![MindMap](https://github.com/user-attachments/assets/5d448356-3c38-432d-9ca1-70c832a8e979)
+
