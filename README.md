@@ -45,4 +45,5 @@ Each solution have
 34. https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
 35. https://leetcode.com/problems/moving-average-from-data-stream/description/
 36. https://leetcode.com/problems/toeplitz-matrix/description/
+37. https://leetcode.com/problems/rising-temperature/description/
     
