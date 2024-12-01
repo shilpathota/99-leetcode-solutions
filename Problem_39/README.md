@@ -189,4 +189,7 @@ T(n)=T(n/2)+O(n)=O(n)
 Space complexity: O(n)
 
 We need O(n) space to create left, mid, and right. Other implementations of Quickselect can avoid creating these three in memory, but in the worst-case scenario, those implementations would still require O(n) space for the recursion call stack.
+---
+## My Mind Map
 
+![IMG_3128](https://github.com/user-attachments/assets/62207b72-3b24-4a4a-b6f3-e958e9131400)
