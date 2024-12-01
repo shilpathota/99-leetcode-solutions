@@ -46,4 +46,6 @@ Each solution have
 35. https://leetcode.com/problems/moving-average-from-data-stream/description/
 36. https://leetcode.com/problems/toeplitz-matrix/description/
 37. https://leetcode.com/problems/rising-temperature/description/
+38.  https://leetcode.com/problems/top-k-frequent-elements/description/
+39. https://leetcode.com/problems/kth-largest-element-in-an-array/description/
     
