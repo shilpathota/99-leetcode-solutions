@@ -48,4 +48,5 @@ Each solution have
 37. https://leetcode.com/problems/rising-temperature/description/
 38.  https://leetcode.com/problems/top-k-frequent-elements/description/
 39. https://leetcode.com/problems/kth-largest-element-in-an-array/description/
+40.  https://leetcode.com/problems/encode-and-decode-strings/description/
     
