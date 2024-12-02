@@ -146,5 +146,9 @@ class Solution {
 ```
 Here the Time complexity is O(N) and the Space Complexity is O(1)
 
+---
+## My Mind Map
+
+![IMG_3129](https://github.com/user-attachments/assets/f171fdf5-6907-4611-8eb7-60765795632b)
 
 
