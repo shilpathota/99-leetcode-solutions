@@ -98,3 +98,9 @@ class Solution {
 
 Even for this we would need the same time complexity and space complexity
 
+
+---
+## My Mindmap
+
+![IMG_3130](https://github.com/user-attachments/assets/1132301c-289c-4764-8d99-5988d550f327)
+
