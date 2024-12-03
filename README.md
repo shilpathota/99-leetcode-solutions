@@ -50,4 +50,5 @@ Each solution have
 39. https://leetcode.com/problems/kth-largest-element-in-an-array/description/
 40.  https://leetcode.com/problems/encode-and-decode-strings/description/
 41.  https://leetcode.com/problems/product-of-array-except-self/description/
+42.  https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/
     
