@@ -58,3 +58,30 @@ For Python Solution - <a href="https://github.com/shilpathota/99-leetcode-soluti
 For Javascript Solution - <a href="https://github.com/shilpathota/99-leetcode-solutions/blob/main/Problem_1/Problem_1.js">Problem_1.js</a><br/>
 For Typescript Solution - <a href="https://github.com/shilpathota/99-leetcode-solutions/blob/main/Problem_1/Problem_1.ts">Problem_1.ts</a><br/>
 For C# Solution - <a href="https://github.com/shilpathota/99-leetcode-solutions/blob/main/Problem_1/Problem_1.cs">Problem_1.cs</a><br/>
+
+## Solution
+
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public ListNode deleteDuplicates(ListNode head) {
+        ListNode root=head;
+        while(head!=null){
+            while(head.next!=null && head.val==head.next.val){
+                head.next=head.next.next!=null?head.next.next:null;
+            }
+            head=head.next;
+        }
+        return root;
+    }
+}
+```
