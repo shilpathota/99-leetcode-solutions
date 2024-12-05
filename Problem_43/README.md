@@ -145,3 +145,8 @@ class Solution {
 Time Complexity: O(n), where n is the length of the string s.
 
 Space Complexity: O(1), as we use constant extra space to store lastNumber, result and so on.
+
+---
+
+## My mindmap
+![IMG_3131](https://github.com/user-attachments/assets/8de12948-79b7-496e-b316-5a8660fb4a5c)
