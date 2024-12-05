@@ -51,4 +51,6 @@ Each solution have
 40.  https://leetcode.com/problems/encode-and-decode-strings/description/
 41.  https://leetcode.com/problems/product-of-array-except-self/description/
 42.  https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/
+43.  https://leetcode.com/problems/basic-calculator-ii/description/
+44.  https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/description/
     
