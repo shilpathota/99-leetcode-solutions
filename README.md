@@ -54,4 +54,5 @@ Each solution have
 43.  https://leetcode.com/problems/basic-calculator-ii/description/
 44.  https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/description/
 45.  https://leetcode.com/problems/powx-n/description/
+46.  https://leetcode.com/problems/nested-list-weight-sum/description/
     
