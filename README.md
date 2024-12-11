@@ -56,4 +56,5 @@ Each solution have
 45.  https://leetcode.com/problems/powx-n/description/
 46.  https://leetcode.com/problems/nested-list-weight-sum/description/
 47.  https://leetcode.com/problems/move-zeroes/description/
+48.  https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
     
