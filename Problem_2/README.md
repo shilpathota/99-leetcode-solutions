@@ -78,15 +78,15 @@ As this is recursion which means the steps are repeated and we know within the r
 <p>Space Complexity: Consider the recursive stack space and it is O(n)</p>
 <p>Is this the optimal solution? No, Definitely not</p>
 <p>There are ways to improvize this solution</p>
-  ```java
+
+ <p>The algorithm looks as follows</p>
+<img src="https://github.com/shilpathota/99-leetcode-solutions/blob/main/Problem_2/Climbing%20Stairs2.drawio.png"/>
+```java
        public int climbStairs(int n) {
         if(n==1||n==2) return n;
         return climbStairs(n-1)+climbStairs(n-2);
     }
-   ```
- <p>The algorithm looks as follows</p>
-<img src="https://github.com/shilpathota/99-leetcode-solutions/blob/main/Problem_2/Climbing%20Stairs2.drawio.png"/>
-
+```
 
 # Solution 2
 <p>What if we store the solution in the recursion and check if the countStairs of n-1 already exists in the storage and if present we can fetch it stopping the recursion.<br/>This will definitely save the iterations. This process is called memoization. </p>
