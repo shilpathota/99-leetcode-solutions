@@ -22,3 +22,11 @@ Input: root = [1]<br/>
 Output: 1<br/>
  ## Solution
  We can use depth-first search algorithm to count the number of nodes where it recursively goes to each of the node.
+ ```java
+class Solution {
+    public int countNodes(TreeNode root) {
+        if(root==null) return 0;
+        return 1 + countNodes(root.left) + countNodes(root.right);
+    }
+}
+```
