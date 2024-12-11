@@ -81,6 +81,7 @@ As this is recursion which means the steps are repeated and we know within the r
 
  <p>The algorithm looks as follows</p>
 <img src="https://github.com/shilpathota/99-leetcode-solutions/blob/main/Problem_2/Climbing%20Stairs2.drawio.png"/>
+
 ```java
        public int climbStairs(int n) {
         if(n==1||n==2) return n;
