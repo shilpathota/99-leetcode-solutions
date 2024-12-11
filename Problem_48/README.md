@@ -46,6 +46,24 @@ The tests are generated such that there is exactly one solution.
 
 ## Solution
 
+As brute force I woiuld want to loop through the elements twice with inner loop comparing the addition and target of outer loop.
+```java
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                if (nums[j] == target - nums[i]) {
+                    return new int[] { i, j };
+                }
+            }
+        }
+        // If no valid pair is found, return an empty array instead of null
+        return new int[] {};
+    }
+}
+```
+But this solution can be optimized with using hashmap with some additional space complexity added
+
 We can use the hashmap fo storing the value and index and compare it with target - number on iterating throuigh the numbers.
 
 But while returning they would like the 1 added to the index.
