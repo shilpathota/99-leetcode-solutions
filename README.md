@@ -60,4 +60,5 @@ Each solution have
 49.  https://leetcode.com/problems/random-pick-with-weight/description/
 50.  https://leetcode.com/problems/find-peak-element/description/
 51.  https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/
+52.  https://leetcode.com/problems/subarray-sum-equals-k/description/
     
