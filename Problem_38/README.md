@@ -29,6 +29,45 @@ It is guaranteed that the answer is unique.
 
 ---
 ## Solution
+When we look at the problem the immediate thought would be get the frequency using hashmap, and then sort using sorting technique or compare to method. No return top k elements.
+
+```java
+class Solution {
+    static <K,V extends Comparable<? super V>> 
+            List<Map.Entry<K, V>> entriesSortedByValues(Map<K,V> map) {
+
+    List<Map.Entry<K,V>> sortedEntries = new ArrayList<Map.Entry<K,V>>(map.entrySet());
+
+    Collections.sort(sortedEntries, 
+            new Comparator<Map.Entry<K,V>>() {
+                @Override
+                public int compare(Map.Entry<K,V> e1, Map.Entry<K,V> e2) {
+                    return e2.getValue().compareTo(e1.getValue());
+                }
+            }
+    );
+
+    return sortedEntries;
+}
+    public int[] topKFrequent(int[] nums, int k) {
+        HashMap<Integer,Integer> map = new HashMap<>();
+        int[] output = new int[k];
+        for(int n : nums){
+            map.put(n,map.getOrDefault(n,0)+1);
+        }
+        List<Map.Entry<Integer,Integer>> sortedMap= entriesSortedByValues(map);
+
+        
+        for(int i=0;i<k;i++){
+            output[i]=(int)sortedMap.get(i).getKey();
+        }
+        return output;
+    }
+}
+```
+This take O(n log n) time complexity and we are using hashmap so space complexity is O(N). Can we do better than O(N log N)
+
+
 As we have seen in earlier problems, to get the frequency of the elements we use Hashmap which keeps track of the frequency of each element
 
 Now we should use the bucket sort which puts the elements into respective buckets based on the frequency. For this we use the list and value as the arraylist with the all the elements in the corresponding frequency
