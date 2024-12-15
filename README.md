@@ -64,4 +64,5 @@ Each solution have
 53.  https://leetcode.com/problems/binary-tree-right-side-view/description/
 54.  https://leetcode.com/problems/simplify-path/description/
 55.  https://leetcode.com/problems/merge-intervals/description/
+56.  https://leetcode.com/problems/lru-cache/description/
     
