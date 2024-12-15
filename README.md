@@ -62,4 +62,5 @@ Each solution have
 51.  https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/
 52.  https://leetcode.com/problems/subarray-sum-equals-k/description/
 53.  https://leetcode.com/problems/binary-tree-right-side-view/description/
+54.  https://leetcode.com/problems/simplify-path/description/
     
