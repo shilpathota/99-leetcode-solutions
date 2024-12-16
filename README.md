@@ -68,5 +68,6 @@ Each solution have
 57.   https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-ii/description/
 58.   https://leetcode.com/problems/merge-strings-alternately/description/
 59.   https://leetcode.com/problems/rank-transform-of-an-array/description/
+60.    https://leetcode.com/problems/check-if-n-and-its-double-exist/description/
 
     
