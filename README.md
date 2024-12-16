@@ -69,5 +69,6 @@ Each solution have
 58.   https://leetcode.com/problems/merge-strings-alternately/description/
 59.   https://leetcode.com/problems/rank-transform-of-an-array/description/
 60.    https://leetcode.com/problems/check-if-n-and-its-double-exist/description/
+61.  https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/description/
 
     
