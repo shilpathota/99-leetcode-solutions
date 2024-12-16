@@ -67,5 +67,6 @@ Each solution have
 56.  https://leetcode.com/problems/lru-cache/description/
 57.   https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-ii/description/
 58.   https://leetcode.com/problems/merge-strings-alternately/description/
+59.   https://leetcode.com/problems/rank-transform-of-an-array/description/
 
     
