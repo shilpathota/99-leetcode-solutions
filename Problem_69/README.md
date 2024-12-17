@@ -196,7 +196,9 @@ class Solution {
 ```
 Without using hashmap
 
-``java
+
+```java
+
 class Solution {
             
     public List<Integer> distanceK(TreeNode root, TreeNode target, int K) {
