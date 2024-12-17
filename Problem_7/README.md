@@ -21,10 +21,18 @@ Input: root = []
 Output: []
 ```
 #### Example 3:
+
 ```
 Input: root = [1]
 Output: [1]
  ```
+#### Example 4:
+<img src="https://assets.leetcode.com/uploads/2024/08/29/tree_2.png" />
+```
+Input: root = [1,2,3,4,5,null,8,null,null,6,7,9]
+
+Output: [4,2,6,5,7,1,3,9,8]
+```
 
 #### Constraints:
 ```
