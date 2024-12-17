@@ -73,5 +73,6 @@ Each solution have
 62.  https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/description/
 63.  https://leetcode.com/problems/take-gifts-from-the-richest-pile/description/
 64.  https://leetcode.com/problems/add-digits/description/
+65.  https://leetcode.com/problems/single-number/description/
 
     
