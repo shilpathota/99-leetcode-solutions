@@ -71,5 +71,6 @@ Each solution have
 60.    https://leetcode.com/problems/check-if-n-and-its-double-exist/description/
 61.  https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/description/
 62.  https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/description/
+63.  https://leetcode.com/problems/take-gifts-from-the-richest-pile/description/
 
     
