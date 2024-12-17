@@ -9,23 +9,24 @@ If there is no common prefix, return an empty string "".
 
  
 
-Example 1:
+#### Example 1:
+```
+Input: strs = ["flower","flow","flight"]
+Output: "fl"
+```
+#### Example 2:
+```
+Input: strs = ["dog","racecar","car"]
+Output: ""
+Explanation: There is no common prefix among the input strings.
+ ```
 
-Input: strs = ["flower","flow","flight"]<br/>
-Output: "fl"<br/>
-Example 2:
-
-Input: strs = ["dog","racecar","car"]<br/>
-Output: ""<br/>
-Explanation: There is no common prefix among the input strings.<br/>
- 
-
-<b>Constraints:</b><br/>
-
-1 <= strs.length <= 200<br/>
-0 <= strs[i].length <= 200<br/>
-strs[i] consists of only lowercase English letters.<br/>
-
+#### Constraints:
+```
+1 <= strs.length <= 200
+0 <= strs[i].length <= 200
+strs[i] consists of only lowercase English letters.
+```
 ## Solution 1
 ### Inference
 Lets first understand the problem. We have to find the common prefix among all the list of arrays.<br/>
@@ -103,16 +104,16 @@ print(longestCommonPrefix(strs1))  -- Output: "fl"
 print(longestCommonPrefix(strs2))  -- Output: ""
 
 </pre>
-longestCommonPrefix Function:
+#### longestCommonPrefix Function:
 
-Checks if the input array strs is empty or null. If true, returns an empty string.
-Otherwise, calls the divideAndConquer function with the entire array.
-divideAndConquer Function:
+- Checks if the input array strs is empty or null. If true, returns an empty string.
+- Otherwise, calls the divideAndConquer function with the entire array.
+#### divideAndConquer Function:
 
-Checks if left equals right. If true, returns strs[left], which is the current string.
-Otherwise, calculates the midpoint (mid) of the current segment and recursively calls divideAndConquer on the left and right halves.
-Returns the result of merging the longest common prefixes (lcpLeft and lcpRight) of the left and right halves using the mergeLCP function.
-mergeLCP Function:
+- Checks if left equals right. If true, returns strs[left], which is the current string.
+- Otherwise, calculates the midpoint (mid) of the current segment and recursively calls divideAndConquer on the left and right halves.
+- Returns the result of merging the longest common prefixes (lcpLeft and lcpRight) of the left and right halves using the mergeLCP function.
+#### mergeLCP Function:
 
 Determines the minimum length between lcpLeft and lcpRight.
 Iterates through the characters of lcpLeft and lcpRight until a mismatch is found or the end of the shortest prefix is reached.
@@ -151,3 +152,56 @@ class Solution {
     }
 }
 ```
+
+Also we can do this vertically
+
+``` java
+class Solution {
+    public String longestCommonPrefix(String[] strs) {
+        String res="";
+        if(strs.length==0) return res;
+        for(int i=0;i<strs[0].length();i++){
+            for(String str : strs){
+                if(i==str.length() || str.charAt(i)!=strs[0].charAt(i)){
+                    return res;
+                }
+            }
+           res+=strs[0].charAt(i);
+        }
+        return res;
+    }
+}
+```
+This is of time complexity O(m*n)
+```java
+class Solution {
+    public String longestCommonPrefix(String[] strs) {
+        if (strs == null || strs.length == 0) return "";
+        int minLen = Integer.MAX_VALUE;
+        for (String str : strs) minLen = Math.min(minLen, str.length());
+        int low = 1;
+        int high = minLen;
+        while (low <= high) {
+            int middle = (low + high) / 2;
+            if (isCommonPrefix(strs, middle)) low = middle + 1;
+            else high = middle - 1;
+        }
+        return strs[0].substring(0, (low + high) / 2);
+    }
+
+    private boolean isCommonPrefix(String[] strs, int len) {
+        String str1 = strs[0].substring(0, len);
+        for (int i = 1; i < strs.length; i++) if (
+            !strs[i].startsWith(str1)
+        ) return false;
+        return true;
+    }
+}
+```
+In the worst case we have n equal strings with length m
+
+Time complexity : O(S⋅logm), where S is the sum of all characters in all strings.
+
+The algorithm makes logm iterations, for each of them there are S=m⋅n comparisons, which gives in total O(S⋅logm) time complexity.
+
+Space complexity : O(1). We only used constant extra space.
