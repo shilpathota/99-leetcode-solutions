@@ -1,5 +1,5 @@
 ## Search Insert Position
-### Leet Code Link - https://leetcode.com/problems/search-insert-position/description/?envType=problem-list-v2&envId=binary-search&favoriteSlug=&difficulty=EASY
+### Leet Code Link - https://leetcode.com/problems/search-insert-position/description/
 ### Complexity - Easy
 ## Description 
 Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
