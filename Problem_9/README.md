@@ -42,3 +42,103 @@ n == code.length
 -(n - 1) <= k <= n - 1
 ## Solution
 As this is circular calculation of the array of elements, we can use sliding window technique to get the optimal solution.<br/>
+
+We are given a circular array code of length n and a key k, we need to update each element in code as follows:
+
+- If k > 0, replace each element with the sum of the next k elements.
+- If k < 0, replace each element with the sum of the previous |k| elements.
+- If k == 0, replace all elements with 0.
+- Since the array is circular, when we go beyond the end, we wrap back to the start using the modulo operator %. For example, i % n keeps an index i within bounds of an array of length n, so if i exceeds n, it wraps back to 0, 1, etc. This lets us navigate the circular array without additional conditions to reset indices.
+
+Given the low constraints on n and k, we can use a simple brute-force approach to simulate the required operation for each index based on k:
+
+- If k is 0, we return an array of size n filled with 0s.
+- If k is positive, we replace each element with the sum of the next k elements, using the modulo operator to handle circular bounds.
+- If k is negative, we replace each element with the sum of the previous |k| elements, again using the modulo operator for circular bounds.
+
+#### Algorithm
+- Create an array result of the same length as code to store the decrypted values.
+- If k is 0, return result, as it should contain only zeros.
+- Loop through each element in code with index i:
+- If k is positive:
+- For each j from i + 1 to i + k:
+- Add code[j % code.length] to result[i].
+- If k is negative:
+- For each j from i - |k| to i - 1:
+- Add code[(j + code.length) % code.length] to result[i].
+- After processing all elements, return result.
+
+```java
+class Solution {
+
+    public int[] decrypt(int[] code, int k) {
+        int[] result = new int[code.length];
+        // If k is 0, return the result directly.
+        if (k == 0) {
+            return result;
+        }
+        for (int i = 0; i < result.length; i++) {
+            if (k > 0) {
+                // If k is greater than 0, store the sum of next k numbers.
+                for (int j = i + 1; j < i + k + 1; j++) {
+                    result[i] += code[j % code.length];
+                }
+            } else {
+                // If k is less than 0, store the sum of previous -1*k numbers.
+                for (int j = i - Math.abs(k); j < i; j++) {
+                    result[i] += code[(j + code.length) % code.length];
+                }
+            }
+        }
+        return result;
+    }
+}
+```
+#### complexity 
+Let n be the size of the given code array.
+
+Time Complexity: O(n⋅∣k∣)
+
+The outer loop iterates over each element in code, so it runs n times, where n is the length of code. For each element, the inner loop runs ∣k∣ times (either forward or backward, depending on the value of k). Therefore, the overall time complexity is O(n⋅∣k∣).
+
+Space complexity: O(n)
+
+The algorithm creates a new array result of the same length as code to store decrypted values, resulting in a space complexity of O(n).
+
+We can use sliding window algorithm 
+
+```java
+class Solution {
+    public int[] decrypt(int[] code, int k) {
+        int[] result = new int[code.length];
+        if(k==0) return result;
+        int start =1; int end =k;int sum =0;
+        if(k<0){
+            start = code.length-Math.abs(k);
+            end = code.length-1;
+        }
+        for(int i=start;i<=end;i++){
+            sum+=code[i];
+        }
+        for(int i=0;i<code.length;i++){
+            result[i]=sum;
+            sum-=code[start%code.length];
+            sum+=code[(end+1)%code.length];
+            start++;
+            end++;
+        }
+        return result;
+    }
+}
+```
+#### complexity
+
+Let n be the size of the given code array.
+
+Time Complexity: O(n)
+
+The first loop calculates the initial sum for the window, which takes O(∣k∣) time. The second loop iterates through each element in the code array, which takes O(n) time. Therefore, the overall time complexity is O(∣k∣+n). In the worst case, |k| can be as large as n, and the time complexity simplifies to O(n).
+
+Space complexity: O(n)
+
+The algorithm creates a new array result of the same length as code to store decrypted values, resulting in a space complexity of O(n).
