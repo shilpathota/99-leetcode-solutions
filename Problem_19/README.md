@@ -39,6 +39,20 @@ haystack and needle consist of only lowercase English characters.
   3. if index of haylength + needle length less than haystack length and if the substring of haystack is same as  needle then return the index
   4. else loop through the elements and once out of loop return -1                  
 </pre>
+```java
+class Solution {
+    public int strStr(String haystack, String needle) {
+        if(needle.length()>haystack.length()) return -1;
+        for(int j=0;j<haystack.length()-needle.length()+1;j++){
+            if((j+needle.length())<=haystack.length() &&
+                    needle.equals(haystack.substring(j,j+needle.length()))){
+                return j;
+            }
+        }
+        return -1;
+    }
+}
+```
 The Complexity of this algorithm is O(N*M)
 ![image](https://github.com/user-attachments/assets/ae53b740-a10f-4d60-97ae-1e37e07adad9)
 
@@ -54,6 +68,27 @@ If all the i  th  characters in the window are equal to the i th  characters of 
 
 If we are done iterating over all values of window_start and none of them return a match, then return -1.
 </pre>
+```java
+class Solution {
+    public int strStr(String haystack, String needle) {
+        int m = needle.length();
+        int n = haystack.length();
+
+        for (int windowStart = 0; windowStart <= n - m; windowStart++) {
+            for (int i = 0; i < m; i++) {
+                if (needle.charAt(i) != haystack.charAt(windowStart + i)) {
+                    break;
+                }
+                if (i == m - 1) {
+                    return windowStart;
+                }
+            }
+        }
+
+        return -1;
+    }
+}
+```
 This has complexity of 
 
 **Time complexity:** O(nm). For every window_start, we may have to iterate at most m times. There are n−m+1 such window_start's. Thus, it is O((n−m+1)⋅m), which is O(nm).
