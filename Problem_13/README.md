@@ -33,5 +33,65 @@ nums contains distinct values sorted in ascending order.
 This problem clearly says the Binary search algorithm and can be used to resolve this. <br/>
 For Binary search, To know more about it - [Binary Search](https://github.com/shilpathota/Algorithms_Made_Easy/blob/main/BinarySearch/README.md)
 
+```java
+class Solution {
+    public int searchInsert(int[] nums, int target) {
+        int left = 0;
+        int right = nums.length-1;
+        int index =-1;
+        if(target<nums[left]) return 0;
+        else if(target>nums[right]) return right+1;
+        while(left<=right){
+            int middle = (int) Math.floor((left+right)/2);
+            if(nums[middle]==target){
+                index = middle;
+                break;
+            }
+            else if(nums[middle]<target){
+                left = middle+1;
+            }
+            else{
+                right = middle-1;
+            }
+            index=left;
+        }
+        return index;
+    }
+}
+```
+### complexity
+Time complexity : O(logN).
+
+Let us compute the time complexity with the help of master theorem
+
+T(N)=aT( 
+b
+N
+​
+ )+Θ(N 
+d
+ ).
+
+The equation represents dividing the problem up into a subproblems of size  
+b
+N
+​
+  in Θ(N 
+d
+ ) time.
+
+Here at each step there is only one subproblem i.e. a = 1, its size is half of the initial problem i.e. b = 2, and all this happens in a constant time i.e. d = 0. As a result, log 
+b
+​
+ a=d and hence we're dealing with case 2 that results in O(n 
+log 
+b
+​
+ a
+ log 
+d+1
+ N) = O(logN) time complexity.
+
+Space complexity: O(1)
 
 
