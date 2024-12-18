@@ -109,17 +109,7 @@ Why Binary Search Works: The missing count is an increasing function, so we can 
 Final Calculation (k + high + 1): After the loop, high represents the last index where the number of missing integers was less than k. The kth missing number is k units ahead of the adjusted range (high + 1).
 
 Time: 
-𝑂
-(
-log
-⁡
-𝑛
-)
 O(logn), as we perform binary search on the array.
 Space: 
-𝑂
-(
-1
-)
 O(1) (constant space).
 
