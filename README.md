@@ -83,5 +83,6 @@ Each solution have
 72.  https://leetcode.com/problems/squares-of-a-sorted-array/description/
 73.  https://leetcode.com/problems/can-place-flowers/description/
 74.  https://leetcode.com/problems/kth-missing-positive-number/description/
+75.  https://leetcode.com/problems/palindrome-number/description/
 
     
