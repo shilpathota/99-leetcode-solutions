@@ -81,5 +81,6 @@ Each solution have
 70.  https://leetcode.com/problems/closest-binary-search-tree-value/description/
 71.  https://leetcode.com/problems/add-strings/description/
 72.  https://leetcode.com/problems/squares-of-a-sorted-array/description/
+73.  https://leetcode.com/problems/can-place-flowers/description/
 
     
