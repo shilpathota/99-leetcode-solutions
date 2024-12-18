@@ -82,5 +82,6 @@ Each solution have
 71.  https://leetcode.com/problems/add-strings/description/
 72.  https://leetcode.com/problems/squares-of-a-sorted-array/description/
 73.  https://leetcode.com/problems/can-place-flowers/description/
+74.  https://leetcode.com/problems/kth-missing-positive-number/description/
 
     
