@@ -10,25 +10,45 @@ Given an integer array nums and an integer k, return true if there are two disti
 
  
 
-Example 1:<br/>
+#### Example 1:
+```
+Input: nums = [1,2,3,1], k = 3
+Output: true
+```
+#### Example 2:
+```
+Input: nums = [1,0,1,1], k = 1
+Output: true
+```
+#### Example 3:
+```
+Input: nums = [1,2,3,1,2,3], k = 2
+Output: false
+ ```
 
-Input: nums = [1,2,3,1], k = 3<br/>
-Output: true<br/>
-Example 2:<br/>
-
-Input: nums = [1,0,1,1], k = 1<br/>
-Output: true<br/>
-Example 3:<br/>
-
-Input: nums = [1,2,3,1,2,3], k = 2<br/>
-Output: false<br/>
- 
-
-Constraints:<br/>
-
-1 <= nums.length <= 105<br/>
--109 <= nums[i] <= 109<br/>
-0 <= k <= 105<br/>
-
+#### Constraints:
+```
+1 <= nums.length <= 105
+-109 <= nums[i] <= 109
+0 <= k <= 105
+```
 ## Solution
 We can use HashMap for optimal solution in java
+
+```java
+class Solution {
+    public boolean containsNearbyDuplicate(int[] nums, int k) {
+        HashMap<Integer,Integer> out = new HashMap<>();
+        for(int i=0;i<nums.length;i++){
+            if(out.containsKey(nums[i])){
+                if(Math.abs(out.get(nums[i])-i)<=k){
+                    return true;
+                }
+            }
+            out.put(nums[i],i);
+        }
+        return false;
+    }
+}
+```
+Time Complexity and Space Complexity is O(N)
