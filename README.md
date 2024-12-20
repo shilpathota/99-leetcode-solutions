@@ -85,5 +85,6 @@ Each solution have
 74.  https://leetcode.com/problems/kth-missing-positive-number/description/
 75.  https://leetcode.com/problems/palindrome-number/description/
 76.  https://leetcode.com/problems/missing-ranges/description/
+77.  https://leetcode.com/problems/maximum-swap/description/
 
     
