@@ -89,5 +89,6 @@ Each solution have
 78.   https://leetcode.com/problems/group-shifted-strings/description/
 79.   https://leetcode.com/problems/random-pick-index/description/
 80.   https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/description/
+81.   https://leetcode.com/problems/dot-product-of-two-sparse-vectors/description/
 
     
