@@ -86,5 +86,7 @@ Each solution have
 75.  https://leetcode.com/problems/palindrome-number/description/
 76.  https://leetcode.com/problems/missing-ranges/description/
 77.  https://leetcode.com/problems/maximum-swap/description/
+78.   https://leetcode.com/problems/group-shifted-strings/description/
+79.   https://leetcode.com/problems/random-pick-index/description/
 
     
