@@ -88,5 +88,6 @@ Each solution have
 77.  https://leetcode.com/problems/maximum-swap/description/
 78.   https://leetcode.com/problems/group-shifted-strings/description/
 79.   https://leetcode.com/problems/random-pick-index/description/
+80.   https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/description/
 
     
