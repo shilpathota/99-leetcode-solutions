@@ -94,5 +94,6 @@ Each solution have
 83.   https://leetcode.com/problems/max-area-of-island/description/
 84.   https://leetcode.com/problems/reverse-linked-list/description/
 85.   https://leetcode.com/problems/palindrome-linked-list/description/
+86.   https://leetcode.com/problems/odd-even-linked-list/description/
 
     
