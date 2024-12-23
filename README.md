@@ -99,6 +99,7 @@ Each solution have
 88.   https://leetcode.com/problems/continuous-subarray-sum/description/
 89.   https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/
 90.   https://leetcode.com/problems/merge-two-sorted-lists/description/
+91.   https://leetcode.com/problems/binary-search/description/
     
 
     
