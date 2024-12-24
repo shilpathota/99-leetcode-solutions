@@ -110,6 +110,7 @@ Each solution have
 99.   https://leetcode.com/problems/shortest-path-in-binary-matrix/description/
 100.   https://leetcode.com/problems/container-with-most-water/description/
 101.   https://leetcode.com/problems/3sum/description/
+102.   https://leetcode.com/problems/next-permutation/description/
     
 
     
