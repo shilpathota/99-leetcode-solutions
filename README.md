@@ -105,6 +105,7 @@ Each solution have
 94.   https://leetcode.com/problems/lexicographical-numbers/description/
 95.   https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/description/
 96.   https://leetcode.com/problems/is-subsequence/description/
+97.   https://leetcode.com/problems/missing-element-in-sorted-array/description/
     
 
     
