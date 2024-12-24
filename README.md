@@ -104,6 +104,7 @@ Each solution have
 93.   https://leetcode.com/problems/zigzag-conversion/description/
 94.   https://leetcode.com/problems/lexicographical-numbers/description/
 95.   https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/description/
+96.   https://leetcode.com/problems/is-subsequence/description/
     
 
     
