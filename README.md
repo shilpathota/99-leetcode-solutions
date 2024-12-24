@@ -103,6 +103,7 @@ Each solution have
 92.   https://leetcode.com/problems/equal-row-and-column-pairs/description/
 93.   https://leetcode.com/problems/zigzag-conversion/description/
 94.   https://leetcode.com/problems/lexicographical-numbers/description/
+95.   https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/description/
     
 
     
