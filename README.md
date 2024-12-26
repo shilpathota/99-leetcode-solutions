@@ -114,5 +114,7 @@ Each solution have
 103.   https://leetcode.com/problems/interval-list-intersections/description/
 104.   https://leetcode.com/problems/max-consecutive-ones-iii/description/
 105.   https://leetcode.com/problems/accounts-merge/description/
+106.   https://leetcode.com/problems/add-two-numbers/description/
+107.   https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/
 
     
