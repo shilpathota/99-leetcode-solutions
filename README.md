@@ -120,5 +120,6 @@ Each solution have
 109.   https://leetcode.com/problems/multiply-strings/description/
 110.   https://leetcode.com/problems/valid-parenthesis-string/description/
 111.   https://leetcode.com/problems/unique-paths/description/
+112.   https://leetcode.com/problems/majority-element-ii/description/
 
     
