@@ -49,7 +49,24 @@ class Solution {
     }
 }
 ```
+
+
+<img width="926" height="167" alt="image" src="https://github.com/user-attachments/assets/c758967a-0afd-4794-899d-57fff4a5468d" />
+
 Time Complexity is O(N)
+
+### All possible solutions
+
+<img width="947" height="651" alt="image" src="https://github.com/user-attachments/assets/a6d8e634-d8f5-4c31-8505-dafdfb5e9ca6" />
+
+### Optimal Solution
+
+<img width="941" height="573" alt="image" src="https://github.com/user-attachments/assets/3d7fb129-eeea-44a1-baf0-60e200e9b343" />
+
+### DP Intution
+
+<img width="942" height="765" alt="image" src="https://github.com/user-attachments/assets/40e022c7-fee4-4659-b938-f762fdb1ce5a" />
+
 
 Space Complexity is O(1)
 
