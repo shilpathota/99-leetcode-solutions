@@ -36,11 +36,17 @@ Could you do it in-place with O(1) extra space?
 ## Solution
 
 <img width="470" height="266" alt="image" src="https://github.com/user-attachments/assets/610bc0ed-248d-491a-8199-3db5abe8702b" />
+
 ### Solution 1
+
 <img width="927" height="351" alt="image" src="https://github.com/user-attachments/assets/71608318-c587-43c7-a59a-a24daba48046" />
+
 ### Solution 2
+
 <img width="928" height="275" alt="image" src="https://github.com/user-attachments/assets/59e8df54-c204-43b4-939e-7aa3d2cadad4" />
+
 ### Solution 3 
+
 <img width="897" height="538" alt="image" src="https://github.com/user-attachments/assets/1897410f-43a6-4325-af7b-aac795c0a926" />
 
 
