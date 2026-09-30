@@ -124,5 +124,6 @@ Each solution have
 113.   https://leetcode.com/problems/rotate-array/description/
 114.   https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/
 115.   https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description/
+116.   https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/
 
     
