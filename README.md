@@ -127,5 +127,6 @@ Each solution have
 116.   https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/
 117.   https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/
 118.   https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/description/
+119.   https://leetcode.com/problems/jump-game/
 
     
