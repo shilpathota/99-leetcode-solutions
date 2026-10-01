@@ -47,14 +47,18 @@ buy[1], sell[1], buy[2], sell[2], ..., buy[k], sell[k]
 To start transaction `t`, transaction `t - 1` must already be complete:
 
 ```text
-buy[t] = max(old_buy[t], old_sell[t - 1] - price)
+buy[t] = max(buy[t], sell[t - 1] - price)
 ```
 
 To complete transaction `t`, sell the stock held by `buy[t]`:
 
 ```text
-sell[t] = max(old_sell[t], old_buy[t] + price)
+sell[t] = max(sell[t], buy[t] + price)
 ```
+
+The arrays can be updated in place from transaction `1` through `k`. This may
+finish transaction `t - 1` and start transaction `t` on the same day, but both
+actions use the same price, so they add zero profit and cannot inflate the answer.
 
 The pattern to remember is:
 
@@ -91,18 +95,15 @@ class Solution:
         sell = [0] * (k + 1)
 
         for price in prices:
-            old_buy = buy.copy()
-            old_sell = sell.copy()
-
             for transaction in range(1, k + 1):
                 buy[transaction] = max(
-                    old_buy[transaction],
-                    old_sell[transaction - 1] - price,
+                    buy[transaction],
+                    sell[transaction - 1] - price,
                 )
 
                 sell[transaction] = max(
-                    old_sell[transaction],
-                    old_buy[transaction] + price,
+                    sell[transaction],
+                    buy[transaction] + price,
                 )
 
         return sell[k]
