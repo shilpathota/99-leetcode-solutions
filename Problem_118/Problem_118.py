@@ -19,18 +19,15 @@ class Solution:
         sell = [0] * (k + 1)
 
         for price in prices:
-            old_buy = buy.copy()
-            old_sell = sell.copy()
-
             for transaction in range(1, k + 1):
                 buy[transaction] = max(
-                    old_buy[transaction],
-                    old_sell[transaction - 1] - price,
+                    buy[transaction],
+                    sell[transaction - 1] - price,
                 )
 
                 sell[transaction] = max(
-                    old_sell[transaction],
-                    old_buy[transaction] + price,
+                    sell[transaction],
+                    buy[transaction] + price,
                 )
 
         return sell[k]
